@@ -1,0 +1,148 @@
+Entry	Entry name	Status	Protein names	Gene names	Organism	Length
+P08697	A2AP_HUMAN	reviewed	Alpha-2-antiplasmin (Alpha-2-AP) (Alpha-2-plasmin inhibitor) (Alpha-2-PI) (Serpin F2)	SERPINF2 AAP PLI	Homo sapiens (Human)	491
+P01023	A2MG_HUMAN	reviewed	Alpha-2-macroglobulin (Alpha-2-M) (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 5)	A2M CPAMD5 FWP007	Homo sapiens (Human)	1474
+P04075	ALDOA_HUMAN	reviewed	Fructose-bisphosphate aldolase A (EC 4.1.2.13) (Lung cancer antigen NY-LU-1) (Muscle-type aldolase)	ALDOA ALDA	Homo sapiens (Human)	364
+P35858	ALS_HUMAN	reviewed	Insulin-like growth factor-binding protein complex acid labile subunit (ALS)	IGFALS ALS	Homo sapiens (Human)	605
+P06727	APOA4_HUMAN	reviewed	Apolipoprotein A-IV (Apo-AIV) (ApoA-IV) (Apolipoprotein A4)	APOA4	Homo sapiens (Human)	396
+P04114	APOB_HUMAN	reviewed	Apolipoprotein B-100 (Apo B-100) [Cleaved into: Apolipoprotein B-48 (Apo B-48)]	APOB	Homo sapiens (Human)	4563
+P02649	APOE_HUMAN	reviewed	Apolipoprotein E (Apo-E)	APOE	Homo sapiens (Human)	317
+Q13790	APOF_HUMAN	reviewed	Apolipoprotein F (Apo-F) (Lipid transfer inhibitor protein) (LTIP)	APOF	Homo sapiens (Human)	326
+Q01518	CAP1_HUMAN	reviewed	Adenylyl cyclase-associated protein 1 (CAP 1)	CAP1 CAP	Homo sapiens (Human)	475
+Q96IY4	CBPB2_HUMAN	reviewed	Carboxypeptidase B2 (EC 3.4.17.20) (Carboxypeptidase U) (CPU) (Plasma carboxypeptidase B) (pCPB) (Thrombin-activable fibrinolysis inhibitor) (TAFI)	CPB2	Homo sapiens (Human)	423
+P15169	CBPN_HUMAN	reviewed	Carboxypeptidase N catalytic chain (CPN) (EC 3.4.17.3) (Anaphylatoxin inactivator) (Arginine carboxypeptidase) (Carboxypeptidase N polypeptide 1) (Carboxypeptidase N small subunit) (Kininase-1) (Lysine carboxypeptidase) (Plasma carboxypeptidase B) (Serum carboxypeptidase N) (SCPN)	CPN1 ACBP	Homo sapiens (Human)	458
+P05156	CFAI_HUMAN	reviewed	Complement factor I (EC 3.4.21.45) (C3B/C4B inactivator) [Cleaved into: Complement factor I heavy chain; Complement factor I light chain]	CFI IF	Homo sapiens (Human)	583
+P10909	CLUS_HUMAN	reviewed	Clusterin (Aging-associated gene 4 protein) (Apolipoprotein J) (Apo-J) (Complement cytolysis inhibitor) (CLI) (Complement-associated protein SP-40,40) (Ku70-binding protein 1) (NA1/NA2) (Testosterone-repressed prostate message 2) (TRPM-2) [Cleaved into: Clusterin beta chain (ApoJalpha) (Complement cytolysis inhibitor a chain); Clusterin alpha chain (ApoJbeta) (Complement cytolysis inhibitor b chain)]	CLU APOJ CLI KUB1 AAG4	Homo sapiens (Human)	449
+P10645	CMGA_HUMAN	reviewed	Chromogranin-A (CgA) (Pituitary secretory protein I) (SP-I) [Cleaved into: Vasostatin-1 (Vasostatin I); Vasostatin-2 (Vasostatin II); EA-92; ES-43; Pancreastatin; SS-18; WA-8; WE-14; LF-19; Catestatin (SL21); AL-11; GV-19; GR-44; ER-37; GE-25; Serpinin-RRG; Serpinin; p-Glu serpinin precursor]	CHGA	Homo sapiens (Human)	457
+P0C0L4	CO4A_HUMAN	reviewed	Complement C4-A (Acidic complement C4) (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 2) [Cleaved into: Complement C4 beta chain; Complement C4-A alpha chain; C4a anaphylatoxin; C4b-A; C4d-A; Complement C4 gamma chain]	C4A CO4 CPAMD2	Homo sapiens (Human)	1744
+P0C0L5	CO4B_HUMAN	reviewed	Complement C4-B (Basic complement C4) (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 3) [Cleaved into: Complement C4 beta chain; Complement C4-B alpha chain; C4a anaphylatoxin; C4b-B; C4d-B; Complement C4 gamma chain]	C4B CO4 CPAMD3; C4B_2	Homo sapiens (Human)	1744
+P01031	CO5_HUMAN	reviewed	Complement C5 (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 4) [Cleaved into: Complement C5 beta chain; Complement C5 alpha chain; C5a anaphylatoxin; Complement C5 alpha' chain]	C5 CPAMD4	Homo sapiens (Human)	1676
+P13671	CO6_HUMAN	reviewed	Complement component C6	C6	Homo sapiens (Human)	934
+P10643	CO7_HUMAN	reviewed	Complement component C7	C7	Homo sapiens (Human)	843
+P07357	CO8A_HUMAN	reviewed	Complement component C8 alpha chain (Complement component 8 subunit alpha)	C8A	Homo sapiens (Human)	584
+P07358	CO8B_HUMAN	reviewed	Complement component C8 beta chain (Complement component 8 subunit beta)	C8B	Homo sapiens (Human)	591
+P07360	CO8G_HUMAN	reviewed	Complement component C8 gamma chain	C8G	Homo sapiens (Human)	202
+P49747	COMP_HUMAN	reviewed	Cartilage oligomeric matrix protein (COMP) (Thrombospondin-5) (TSP5)	COMP	Homo sapiens (Human)	757
+Q9NQ79	CRAC1_HUMAN	reviewed	Cartilage acidic protein 1 (68 kDa chondrocyte-expressed protein) (CEP-68) (ASPIC)	CRTAC1 ASPIC1 CEP68	Homo sapiens (Human)	661
+P02741	CRP_HUMAN	reviewed	C-reactive protein [Cleaved into: C-reactive protein(1-205)]	CRP PTX1	Homo sapiens (Human)	224
+O94985	CSTN1_HUMAN	reviewed	Calsyntenin-1 (Alcadein-alpha) (Alc-alpha) (Alzheimer-related cadherin-like protein) (Non-classical cadherin XB31alpha) [Cleaved into: Soluble Alc-alpha (SAlc-alpha); CTF1-alpha (C-terminal fragment 1-alpha)]	CLSTN1 CS1 KIAA0911	Homo sapiens (Human)	981
+Q9UK59	DBR1_HUMAN	reviewed	Lariat debranching enzyme (EC 3.1.-.-)	DBR1	Homo sapiens (Human)	544
+Q8IXL6	DMP4_HUMAN	reviewed	Extracellular serine/threonine protein kinase FAM20C (EC 2.7.11.1) (Dentin matrix protein 4) (DMP-4) (Golgi-enriched fraction casein kinase) (GEF-CK) (Protein FAM20C)	FAM20C DMP4	Homo sapiens (Human)	584
+Q13822	ENPP2_HUMAN	reviewed	Ectonucleotide pyrophosphatase/phosphodiesterase family member 2 (E-NPP 2) (EC 3.1.4.39) (Autotaxin) (Extracellular lysophospholipase D) (LysoPLD)	ENPP2 ATX PDNP2	Homo sapiens (Human)	863
+P00488	F13A_HUMAN	reviewed	Coagulation factor XIII A chain (Coagulation factor XIIIa) (EC 2.3.2.13) (Protein-glutamine gamma-glutamyltransferase A chain) (Transglutaminase A chain)	F13A1 F13A	Homo sapiens (Human)	732
+P03951	FA11_HUMAN	reviewed	Coagulation factor XI (FXI) (EC 3.4.21.27) (Plasma thromboplastin antecedent) (PTA) [Cleaved into: Coagulation factor XIa heavy chain; Coagulation factor XIa light chain]	F11	Homo sapiens (Human)	625
+P00748	FA12_HUMAN	reviewed	Coagulation factor XII (EC 3.4.21.38) (Hageman factor) (HAF) [Cleaved into: Coagulation factor XIIa heavy chain; Beta-factor XIIa part 1; Coagulation factor XIIa light chain (Beta-factor XIIa part 2)]	F12	Homo sapiens (Human)	615
+P12259	FA5_HUMAN	reviewed	Coagulation factor V (Activated protein C cofactor) (Proaccelerin, labile factor) [Cleaved into: Coagulation factor V heavy chain; Coagulation factor V light chain]	F5	Homo sapiens (Human)	2224
+Q15485	FCN2_HUMAN	reviewed	Ficolin-2 (37 kDa elastin-binding protein) (Collagen/fibrinogen domain-containing protein 2) (EBP-37) (Ficolin-B) (Ficolin-beta) (Hucolin) (L-ficolin) (Serum lectin p35)	FCN2 FCNL	Homo sapiens (Human)	313
+O75636	FCN3_HUMAN	reviewed	Ficolin-3 (Collagen/fibrinogen domain-containing lectin 3 p35) (Collagen/fibrinogen domain-containing protein 3) (Hakata antigen)	FCN3 FCNH HAKA1	Homo sapiens (Human)	299
+P02671	FIBA_HUMAN	reviewed	Fibrinogen alpha chain [Cleaved into: Fibrinopeptide A; Fibrinogen alpha chain]	FGA	Homo sapiens (Human)	866
+P06396	GELS_HUMAN	reviewed	Gelsolin (AGEL) (Actin-depolymerizing factor) (ADF) (Brevin)	GSN	Homo sapiens (Human)	782
+P40197	GPV_HUMAN	reviewed	Platelet glycoprotein V (GPV) (Glycoprotein 5) (CD antigen CD42d)	GP5	Homo sapiens (Human)	560
+P23527	H2B1O_HUMAN	reviewed	Histone H2B type 1-O (Histone H2B.2) (Histone H2B.n) (H2B/n)	HIST1H2BO H2BFH H2BFN	Homo sapiens (Human)	126
+P02790	HEMO_HUMAN	reviewed	Hemopexin (Beta-1B-glycoprotein)	HPX	Homo sapiens (Human)	462
+P05546	HEP2_HUMAN	reviewed	Heparin cofactor 2 (Heparin cofactor II) (HC-II) (Protease inhibitor leuserpin-2) (HLS2) (Serpin D1)	SERPIND1 HCF2	Homo sapiens (Human)	499
+P00738	HPT_HUMAN	reviewed	Haptoglobin (Zonulin) [Cleaved into: Haptoglobin alpha chain; Haptoglobin beta chain]	HP	Homo sapiens (Human)	406
+P00739	HPTR_HUMAN	reviewed	Haptoglobin-related protein	HPR	Homo sapiens (Human)	348
+P23083	HV103_HUMAN	reviewed	Ig heavy chain V-I region V35		Homo sapiens (Human)	117
+P01880	IGHD_HUMAN	reviewed	Ig delta chain C region	IGHD	Homo sapiens (Human)	384
+P01871	IGHM_HUMAN	reviewed	Ig mu chain C region	IGHM	Homo sapiens (Human)	452
+P19827	ITIH1_HUMAN	reviewed	Inter-alpha-trypsin inhibitor heavy chain H1 (ITI heavy chain H1) (ITI-HC1) (Inter-alpha-inhibitor heavy chain 1) (Inter-alpha-trypsin inhibitor complex component III) (Serum-derived hyaluronan-associated protein) (SHAP)	ITIH1 IGHEP1	Homo sapiens (Human)	911
+Q06033	ITIH3_HUMAN	reviewed	Inter-alpha-trypsin inhibitor heavy chain H3 (ITI heavy chain H3) (ITI-HC3) (Inter-alpha-inhibitor heavy chain 3) (Serum-derived hyaluronan-associated protein) (SHAP)	ITIH3	Homo sapiens (Human)	890
+Q14624	ITIH4_HUMAN	reviewed	Inter-alpha-trypsin inhibitor heavy chain H4 (ITI heavy chain H4) (ITI-HC4) (Inter-alpha-inhibitor heavy chain 4) (Inter-alpha-trypsin inhibitor family heavy chain-related protein) (IHRP) (Plasma kallikrein sensitive glycoprotein 120) (Gp120) (PK-120) [Cleaved into: 70 kDa inter-alpha-trypsin inhibitor heavy chain H4; 35 kDa inter-alpha-trypsin inhibitor heavy chain H4]	ITIH4 IHRP ITIHL1 PK120 PRO1851	Homo sapiens (Human)	930
+Q8WWA0	ITLN1_HUMAN	reviewed	Intelectin-1 (ITLN-1) (Endothelial lectin HL-1) (Galactofuranose-binding lectin) (Intestinal lactoferrin receptor) (Omentin)	ITLN1 INTL ITLN LFR UNQ640/PRO1270	Homo sapiens (Human)	313
+P35527	K1C9_HUMAN	reviewed	Keratin, type I cytoskeletal 9 (Cytokeratin-9) (CK-9) (Keratin-9) (K9)	KRT9	Homo sapiens (Human)	623
+P06732	KCRM_HUMAN	reviewed	Creatine kinase M-type (EC 2.7.3.2) (Creatine kinase M chain) (M-CK) [Cleaved into: Creatine kinase M-type, N-terminally processed]	CKM CKMM	Homo sapiens (Human)	381
+P03952	KLKB1_HUMAN	reviewed	Plasma kallikrein (EC 3.4.21.34) (Fletcher factor) (Kininogenin) (Plasma prekallikrein) [Cleaved into: Plasma kallikrein heavy chain; Plasma kallikrein light chain]	KLKB1 KLK3	Homo sapiens (Human)	638
+P01042	KNG1_HUMAN	reviewed	Kininogen-1 (Alpha-2-thiol proteinase inhibitor) (Fitzgerald factor) (High molecular weight kininogen) (HMWK) (Williams-Fitzgerald-Flaujeac factor) [Cleaved into: Kininogen-1 heavy chain; T-kinin (Ile-Ser-Bradykinin); Bradykinin (Kallidin I); Lysyl-bradykinin (Kallidin II); Kininogen-1 light chain; Low molecular weight growth-promoting factor]	KNG1 BDK KNG	Homo sapiens (Human)	644
+P18428	LBP_HUMAN	reviewed	Lipopolysaccharide-binding protein (LBP)	LBP	Homo sapiens (Human)	481
+P00338	LDHA_HUMAN	reviewed	L-lactate dehydrogenase A chain (LDH-A) (EC 1.1.1.27) (Cell proliferation-inducing gene 19 protein) (LDH muscle subunit) (LDH-M) (Renal carcinoma antigen NY-REN-59)	LDHA PIG19	Homo sapiens (Human)	332
+P09960	LKHA4_HUMAN	reviewed	Leukotriene A-4 hydrolase (LTA-4 hydrolase) (EC 3.3.2.6) (Leukotriene A(4) hydrolase)	LTA4H LTA4	Homo sapiens (Human)	611
+P33908	MA1A1_HUMAN	reviewed	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA (EC 3.2.1.113) (Man(9)-alpha-mannosidase) (Man9-mannosidase) (Mannosidase alpha class 1A member 1) (Processing alpha-1,2-mannosidase IA) (Alpha-1,2-mannosidase IA)	MAN1A1	Homo sapiens (Human)	653
+P48740	MASP1_HUMAN	reviewed	Mannan-binding lectin serine protease 1 (EC 3.4.21.-) (Complement factor MASP-3) (Complement-activating component of Ra-reactive factor) (Mannose-binding lectin-associated serine protease 1) (MASP-1) (Mannose-binding protein-associated serine protease) (Ra-reactive factor serine protease p100) (RaRF) (Serine protease 5) [Cleaved into: Mannan-binding lectin serine protease 1 heavy chain; Mannan-binding lectin serine protease 1 light chain]	MASP1 CRARF CRARF1 PRSS5	Homo sapiens (Human)	699
+O00187	MASP2_HUMAN	reviewed	Mannan-binding lectin serine protease 2 (EC 3.4.21.104) (MBL-associated serine protease 2) (Mannose-binding protein-associated serine protease 2) (MASP-2) [Cleaved into: Mannan-binding lectin serine protease 2 A chain; Mannan-binding lectin serine protease 2 B chain]	MASP2	Homo sapiens (Human)	686
+P36955	PEDF_HUMAN	reviewed	Pigment epithelium-derived factor (PEDF) (Cell proliferation-inducing gene 35 protein) (EPC-1) (Serpin F1)	SERPINF1 PEDF PIG35	Homo sapiens (Human)	418
+Q96PD5	PGRP2_HUMAN	reviewed	N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28) (Peptidoglycan recognition protein 2) (Peptidoglycan recognition protein long) (PGRP-L)	PGLYRP2 PGLYRPL PGRPL UNQ3103/PRO10102	Homo sapiens (Human)	576
+P08567	PLEK_HUMAN	reviewed	Pleckstrin (Platelet 47 kDa protein) (p47)	PLEK P47	Homo sapiens (Human)	350
+P27169	PON1_HUMAN	reviewed	Serum paraoxonase/arylesterase 1 (PON 1) (EC 3.1.1.2) (EC 3.1.1.81) (EC 3.1.8.1) (Aromatic esterase 1) (A-esterase 1) (K-45) (Serum aryldialkylphosphatase 1)	PON1 PON	Homo sapiens (Human)	355
+P07225	PROS_HUMAN	reviewed	Vitamin K-dependent protein S	PROS1 PROS	Homo sapiens (Human)	676
+P25786	PSA1_HUMAN	reviewed	Proteasome subunit alpha type-1 (EC 3.4.25.1) (30 kDa prosomal protein) (PROS-30) (Macropain subunit C2) (Multicatalytic endopeptidase complex subunit C2) (Proteasome component C2) (Proteasome nu chain)	PSMA1 HC2 NU PROS30 PSC2	Homo sapiens (Human)	263
+O00391	QSOX1_HUMAN	reviewed	Sulfhydryl oxidase 1 (hQSOX) (EC 1.8.3.2) (Quiescin Q6)	QSOX1 QSCN6 UNQ2520/PRO6013	Homo sapiens (Human)	747
+P0DJI9	SAA2_HUMAN	reviewed	Serum amyloid A-2 protein (SAA2)	SAA2	Homo sapiens (Human)	122
+P02808	STAT_HUMAN	reviewed	Statherin	STATH	Homo sapiens (Human)	62
+P00734	THRB_HUMAN	reviewed	Prothrombin (EC 3.4.21.5) (Coagulation factor II) [Cleaved into: Activation peptide fragment 1; Activation peptide fragment 2; Thrombin light chain; Thrombin heavy chain]	F2	Homo sapiens (Human)	622
+P29401	TKT_HUMAN	reviewed	Transketolase (TK) (EC 2.2.1.1)	TKT	Homo sapiens (Human)	623
+P02787	TRFE_HUMAN	reviewed	Serotransferrin (Transferrin) (Beta-1 metal-binding globulin) (Siderophilin)	TF PRO1400	Homo sapiens (Human)	698
+B4DPQ0	B4DPQ0_HUMAN	unreviewed	Complement C1r subcomponent (cDNA FLJ54471, highly similar to Complement C1r subcomponent (EC 3.4.21.41))	C1R	Homo sapiens (Human)	719
+G3V2W1	G3V2W1_HUMAN	unreviewed	Protein Z-dependent protease inhibitor (Serpin peptidase inhibitor, clade A (Alpha-1 antiproteinase, antitrypsin), member 10, isoform CRA_a)	SERPINA10 hCG_22331	Homo sapiens (Human)	484
+A0A024R962	A0A024R962_HUMAN	unreviewed	HCG40889, isoform CRA_b	hCG_40889	Homo sapiens (Human)	1231
+B0YIW2	B0YIW2_HUMAN	unreviewed	Apolipoprotein C-III (Apolipoprotein C-III variant 1)	APOC3	Homo sapiens (Human)	117
+Q5U077	Q5U077_HUMAN	unreviewed	L-lactate dehydrogenase (EC 1.1.1.27)	LDHB HEL-S-281 hCG_24788	Homo sapiens (Human)	334
+B7ZKJ8	B7ZKJ8_HUMAN	unreviewed	ITIH4 protein (Inter-alpha-trypsin inhibitor heavy chain H4)	ITIH4	Homo sapiens (Human)	935
+B4E1Z4	B4E1Z4_HUMAN	unreviewed	Uncharacterized protein (cDNA FLJ55673, highly similar to Complement factor B (EC 3.4.21.47))		Homo sapiens (Human)	1266
+A0A024R3E3	A0A024R3E3_HUMAN	unreviewed	Apolipoprotein A-I, isoform CRA_a	APOA1 hCG_41332	Homo sapiens (Human)	267
+A5PKX5	A5PKX5_HUMAN	unreviewed	Alpha-mannosidase (EC 3.2.1.-)	MAN2A1	Homo sapiens (Human)	1143
+A0A024R6N9	A0A024R6N9_HUMAN	unreviewed	Serpin peptidase inhibitor, clade A (Alpha-1 antiproteinase, antitrypsin), member 5, isoform CRA_a	SERPINA5 hCG_2029091	Homo sapiens (Human)	406
+A5PL27	A5PL27_HUMAN	unreviewed	CP protein (Ceruloplasmin (Ferroxidase)) (Ceruloplasmin (Ferroxidase), isoform CRA_a)	CP hCG_1781201	Homo sapiens (Human)	1065
+A0A024R035	A0A024R035_HUMAN	unreviewed	Complement component 9, isoform CRA_a	C9 hCG_37544	Homo sapiens (Human)	559
+Q14663	Q14663_HUMAN	unreviewed	H-2K binding factor-2	KBF2 pKBF-2	Homo sapiens (Human)	420
+D3DQX7	D3DQX7_HUMAN	unreviewed	Serum amyloid A protein	SAA1 hCG_15534	Homo sapiens (Human)	122
+Q6U2H4	Q6U2H4_HUMAN	unreviewed	C4B1 (Fragment)	C4B	Homo sapiens (Human)	100
+A0A024R9Q1	A0A024R9Q1_HUMAN	unreviewed	Thrombospondin 1, isoform CRA_a	THBS1 hCG_1787130	Homo sapiens (Human)	1170
+V9HW92	V9HW92_HUMAN	unreviewed	Epididymis secretory protein Li 112 (PDZ and LIM domain 1 (Elfin), isoform CRA_a)	HEL-S-112 PDLIM1 hCG_39492	Homo sapiens (Human)	329
+A0A024R6I7	A0A024R6I7_HUMAN	unreviewed	Serpin peptidase inhibitor, clade A (Alpha-1 antiproteinase, antitrypsin), member 1, isoform CRA_a	SERPINA1 hCG_2029168	Homo sapiens (Human)	418
+V9HWC0	V9HWC0_HUMAN	unreviewed	Epididymis luminal protein 70 (Moesin, isoform CRA_a)	HEL70 MSN hCG_18939	Homo sapiens (Human)	577
+D1MGQ2	D1MGQ2_HUMAN	unreviewed	Alpha-2 globin chain (Delta globin) (HCG1745306, isoform CRA_b)	HBA2 hCG_1745306	Homo sapiens (Human)	142
+A2RTY6	A2RTY6_HUMAN	unreviewed	Inter-alpha (Globulin) inhibitor H2 (Inter-alpha (Globulin) inhibitor H2, isoform CRA_b) (cDNA FLJ75038, highly similar to Homo sapiens inter-alpha (globulin) inhibitor H2 (ITIH2), mRNA)	ITIH2 hCG_25115	Homo sapiens (Human)	946
+V9HWE3	V9HWE3_HUMAN	unreviewed	Carbonic anhydrase I, isoform CRA_a (Epididymis secretory protein Li 11)	HEL-S-11 CA1 hCG_20883	Homo sapiens (Human)	261
+Q5EFE5	Q5EFE5_HUMAN	unreviewed	Anti-RhD monoclonal T125 gamma1 heavy chain		Homo sapiens (Human)	475
+Q6N089	Q6N089_HUMAN	unreviewed	Putative uncharacterized protein DKFZp686P15220	DKFZp686P15220	Homo sapiens (Human)	472
+V9HWF5	V9HWF5_HUMAN	unreviewed	Peptidyl-prolyl cis-trans isomerase (EC 5.2.1.8)	HEL-S-69p	Homo sapiens (Human)	165
+C9JC84	C9JC84_HUMAN	unreviewed	Fibrinogen gamma chain	FGG	Homo sapiens (Human)	461
+A0A024R4F1	A0A024R4F1_HUMAN	unreviewed	Enolase 1, (Alpha), isoform CRA_a	ENO1 hCG_22399	Homo sapiens (Human)	434
+Q6MZU6	Q6MZU6_HUMAN	unreviewed	Putative uncharacterized protein DKFZp686C15213	DKFZp686C15213	Homo sapiens (Human)	464
+Q6P089	Q6P089_HUMAN	unreviewed	IGH@ protein	IGH@	Homo sapiens (Human)	480
+D6REX5	D6REX5_HUMAN	unreviewed	Selenoprotein P (Fragment)	SEPP1	Homo sapiens (Human)	310
+Q6MZX7	Q6MZX7_HUMAN	unreviewed	Putative uncharacterized protein DKFZp686M24218	DKFZp686M24218	Homo sapiens (Human)	476
+A0A024R944	A0A024R944_HUMAN	unreviewed	Serpin peptidase inhibitor, clade C (Antithrombin), member 1, isoform CRA_a	SERPINC1 hCG_23693	Homo sapiens (Human)	464
+Q7Z3Y4	Q7Z3Y4_HUMAN	unreviewed	Uncharacterized protein		Homo sapiens (Human)	236
+D6RE86	D6RE86_HUMAN	unreviewed	Ceruloplasmin (Fragment)	CP	Homo sapiens (Human)	178
+V9HWB8	V9HWB8_HUMAN	unreviewed	Pyruvate kinase (EC 2.7.1.40)	HEL-S-30	Homo sapiens (Human)	531
+V9GYM3	V9GYM3_HUMAN	unreviewed	Apolipoprotein A-II	APOA2	Homo sapiens (Human)	133
+Q68CN4	Q68CN4_HUMAN	unreviewed	Putative uncharacterized protein DKFZp686E23209	DKFZp686E23209	Homo sapiens (Human)	470
+Q6N030	Q6N030_HUMAN	unreviewed	Putative uncharacterized protein DKFZp686I15212	DKFZp686I15212	Homo sapiens (Human)	518
+A0A024R1N1	A0A024R1N1_HUMAN	unreviewed	Myosin, heavy polypeptide 9, non-muscle, isoform CRA_a	MYH9 hCG_41454	Homo sapiens (Human)	1960
+Q6N092	Q6N092_HUMAN	unreviewed	Putative uncharacterized protein DKFZp686K18196 (Fragment)	DKFZp686K18196	Homo sapiens (Human)	519
+Q6GMX4	Q6GMX4_HUMAN	unreviewed	IGL@ protein	IGL@	Homo sapiens (Human)	236
+A0A024R145	A0A024R145_HUMAN	unreviewed	Fructose-bisphosphate aldolase (EC 4.1.2.13)	ALDOB hCG_27655	Homo sapiens (Human)	364
+D9ZGG2	D9ZGG2_HUMAN	unreviewed	Vitronectin	VTN	Homo sapiens (Human)	478
+B3KS49	B3KS49_HUMAN	unreviewed	cDNA FLJ35478 fis, clone SMINT2007796, highly similar to Gelsolin		Homo sapiens (Human)	485
+B2R6W1	B2R6W1_HUMAN	unreviewed	cDNA, FLJ93143, highly similar to Homo sapiens complement component 7 (C7), mRNA		Homo sapiens (Human)	843
+A6XGL1	A6XGL1_HUMAN	unreviewed	Transthyretin		Homo sapiens (Human)	184
+B2R7D2	B2R7D2_HUMAN	unreviewed	cDNA, FLJ93389, highly similar to Homo sapiens multiple inositol polyphosphate histidine phosphatase, 1 (MINPP1), mRNA		Homo sapiens (Human)	487
+A5PL32	A5PL32_HUMAN	unreviewed	APOL1 protein (Fragment)	APOL1	Homo sapiens (Human)	439
+V9HWA9	V9HWA9_HUMAN	unreviewed	Epididymis secretory sperm binding protein Li 62p	HEL-S-62p	Homo sapiens (Human)	1663
+B3KS79	B3KS79_HUMAN	unreviewed	cDNA FLJ35730 fis, clone TESTI2003131, highly similar to ALPHA-1-ANTICHYMOTRYPSIN		Homo sapiens (Human)	448
+V9HW21	V9HW21_HUMAN	unreviewed	Epididymis luminal protein 76	HEL-76	Homo sapiens (Human)	260
+Q9UNU2	Q9UNU2_HUMAN	unreviewed	Complement protein C4B frameshift mutant (Fragment)	C4B	Homo sapiens (Human)	354
+D2KT85	D2KT85_HUMAN	unreviewed	Complement factor B (Fragment)		Homo sapiens (Human)	260
+Q86SX2	Q86SX2_HUMAN	unreviewed	Full-length cDNA clone CS0DL004YM19 of B cells (Ramos cell line) of Homo sapiens (human) (Fragment)		Homo sapiens (Human)	139
+V9HWD8	V9HWD8_HUMAN	unreviewed	Epididymis secretory sperm binding protein Li 163pA	HEL-S-163pA	Homo sapiens (Human)	495
+V9HVY1	V9HVY1_HUMAN	unreviewed	Epididymis secretory sperm binding protein Li 78p	HEL-S-78p	Homo sapiens (Human)	491
+B7Z8Q2	B7Z8Q2_HUMAN	unreviewed	cDNA FLJ55606, highly similar to Alpha-2-HS-glycoprotein		Homo sapiens (Human)	433
+Q6NXF2	Q6NXF2_HUMAN	unreviewed	FLNA protein (Fragment)	FLNA	Homo sapiens (Human)	983
+B2R8I2	B2R8I2_HUMAN	unreviewed	cDNA, FLJ93914, highly similar to Homo sapiens histidine-rich glycoprotein (HRG), mRNA		Homo sapiens (Human)	525
+Q53G76	Q53G76_HUMAN	unreviewed	Beta actin variant (Fragment)		Homo sapiens (Human)	375
+B4DR57	B4DR57_HUMAN	unreviewed	cDNA FLJ60818, highly similar to Complement C3		Homo sapiens (Human)	235
+A8K2N0	A8K2N0_HUMAN	unreviewed	cDNA FLJ77835, highly similar to Homo sapiens complement component 1, s subcomponent (C1S), transcript variant 2, mRNA		Homo sapiens (Human)	688
+Q56G89	Q56G89_HUMAN	unreviewed	Serum albumin		Homo sapiens (Human)	609
+D9YZU5	D9YZU5_HUMAN	unreviewed	Hemoglobin, beta	HBB	Homo sapiens (Human)	147
+B2R7F8	B2R7F8_HUMAN	unreviewed	cDNA, FLJ93426, highly similar to Homo sapiens plasminogen (PLG), mRNA		Homo sapiens (Human)	810
+B7Z1F8	B7Z1F8_HUMAN	unreviewed	cDNA FLJ53025, highly similar to Complement C4-B		Homo sapiens (Human)	270
+A8K061	A8K061_HUMAN	unreviewed	cDNA FLJ77880, highly similar to Homo sapiens angiopoietin-like 3, mRNA		Homo sapiens (Human)	460
+B2R815	B2R815_HUMAN	unreviewed	cDNA, FLJ93695, highly similar to Homo sapiens serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 4 (SERPINA4), mRNA		Homo sapiens (Human)	427
+B4DPQ3	B4DPQ3_HUMAN	unreviewed	cDNA FLJ51034, highly similar to Vitamin K-dependent protein C (EC 3.4.21.69)		Homo sapiens (Human)	517
+K7ER74	K7ER74_HUMAN	unreviewed	Protein APOC4-APOC2	APOC4-APOC2	Homo sapiens (Human)	178
+B4E344	B4E344_HUMAN	unreviewed	cDNA FLJ54406, highly similar to Complement C4-B		Homo sapiens (Human)	650
+Q53HT9	Q53HT9_HUMAN	unreviewed	Complement component 1, r subcomponent variant (Fragment)		Homo sapiens (Human)	705
+B4E1F0	B4E1F0_HUMAN		Plasma protease C1 inhibitor.			
+F5H4W9	F5H4W9_HUMAN		Serum paraoxonase/arylesterase 1.			
+Q5TCU6	Q5TCU6_HUMAN		Talin-1.			

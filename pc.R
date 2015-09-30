@@ -37,8 +37,34 @@ else
 }
 ##############
 swath_rt_data <- read.table("data/ions.txt", header = T, sep = '\t', stringsAsFactors = FALSE)
+swath_frg_data <- data.frame(Pep = swath_rt_data$Peptide, 
+                            RT = swath_rt_data$RT,
+                            precursor_charge = swath_rt_data$Precursor.Charge, 
+                            fragment_series = swath_rt_data$Ion.Type,
+                            fragment_number = swath_rt_data$Residue,
+                            fragment_charge = swath_rt_data$Fragment.Charge,
+                            PrecursorMZ = swath_rt_data$Precursor.MZ,
+                            FragmentMZ = swath_rt_data$Fragment.MZ,
+                            stringsAsFactors = FALSE)
+swath_frg_data$ID = paste(sep = "_", swath_frg_data$Pep, swath_frg_data$precursor_charge, 
+                           swath_frg_data$fragment_series, swath_frg_data$fragment_number, 
+                           swath_frg_data$fragment_charge)
+frgs <- read.csv("fragments.txt", sep="\t", header = T, stringsAsFactors = F)
+frgs <- rename(frgs, c("clean_peptide_sequence" = "Pep" ))
+frgs$ID = paste(sep="_", frgs$Pep, frgs$precursor_charge, 
+                           frgs$fragment_series, frgs$fragment_number, 
+                           frgs$fragment_charge)
+frgs <- unique(frgs)
+swath_frg_data <- unique(swath_frg_data)
+frgs_ <- merge(swath_frg_data, frgs, by = "ID", all.y=T, all.x=F)
+frgs_ <- na.omit(frgs_)
+frgs_ <- unique(frgs_)
+frgs_$Pep <- frgs_$Pep.y
+frgs_ <- frgs_[,c("Pep", "RT", "PrecursorMZ", "FragmentMZ")]
+write.table(frgs_,"fragment_base.txt", quote = F, sep = "\t", row.names=F)
 swath_rt_data <- data.frame(Pep = swath_rt_data$Peptide, 
-                            RT = swath_rt_data$RT, Prot = swath_rt_data$Protein, stringsAsFactors = FALSE)
+                            RT = swath_rt_data$RT, Prot = swath_rt_data$Protein, 
+                            stringsAsFactors = FALSE)
 swath_rt_data$Pep <- gsub(x= swath_rt_data$Pep, pattern= '\\[.*?\\]', replacement= '')
 swath_rt_data$Pep <- gsub(x= swath_rt_data$Pep, pattern= '-', replacement= '', fixed= TRUE)
 
@@ -72,6 +98,8 @@ swath_rt_data <- unique(swath_rt_data)
 ##############
 
 peps <- read.table("data//peptides1_wo407.txt", sep = '\t', header = TRUE, stringsAsFactors = FALSE)
+#peps <- read.table("data//peptides_0_rec.txt", sep = '\t', header = TRUE, stringsAsFactors = FALSE)
+#pepsx = merge(peps, peps0, by="clean_peptide_sequence")
 
 if (NORM_SWATH)
 {
@@ -131,6 +159,7 @@ ccmlist <- rename(ccmlist, c("ccmlfc" = "log2fc", "ccmpv" = "pv", "Prot" = "Prot
 write.table(ccmlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
             "CCM_peptides.txt", sep = '\t', row.names = F, quote = F)
 
+
 ####
 peps$CC <- apply(peps[,CC_SAMPLES], 1, FUN = mean)
 peps$KCC <- apply(peps[,KCC_SAMPLES], 1, FUN = mean)
@@ -151,10 +180,22 @@ write.table(cclist[,c("Pep", "RT", "log2fc", "pv", "Protein", "W", "M", "Descrip
 ccmlist <- ccmlist[!(ccmlist$Pep %in% cclist$Pep),]
 write.table(ccmlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
             "CCMuniq_peptides.txt", sep = '\t', row.names = F, quote = F)
+ccmlist$M <- TRUE
+ccmlist$W <- FALSE
+ccmtlist <- rbind(cclist, ccmlist)
+ccmtlist <- ccmtlist
+write.table(ccmtlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
+            "CCMtotal.txt", sep = '\t', row.names = F, quote = F)
+
 ccwlist <- ccwlist[!(ccwlist$Pep %in% cclist$Pep),]
 write.table(ccwlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
             "CCWuniq_peptides.txt", sep = '\t', row.names = F, quote = F)
-
+ccwlist$M <- FALSE
+ccwlist$W <- TRUE
+ccwtlist <- rbind(cclist, ccwlist)
+ccwtlist <- ccmtlist
+write.table(ccwtlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
+            "CCWtotal.txt", sep = '\t', row.names = F, quote = F)
 ####
 peps$OC <- apply(peps[,OC_SAMPLES], 1, FUN = mean)
 peps$KOC <- apply(peps[,KOC_SAMPLES], 1, FUN = mean)
@@ -223,8 +264,8 @@ write.table(constp[,c("Pep", "RT", "Protein")],
 
 
 #############################
+stop("Run ended.")
 
-,] 1 2 3 4
 peps1 <- read.table("data//peptides_rec_wo407.txt", sep = '\t', header = TRUE, stringsAsFactors = FALSE)
 if (NORM_SWATH)
 {

@@ -193,7 +193,7 @@ write.table(ccwlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")],
 ccwlist$M <- FALSE
 ccwlist$W <- TRUE
 ccwtlist <- rbind(cclist, ccwlist)
-ccwtlist <- ccmtlist
+ccwtlist <- ccwtlist
 write.table(ccwtlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
             "CCWtotal.txt", sep = '\t', row.names = F, quote = F)
 ####

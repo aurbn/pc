@@ -15,25 +15,34 @@ FC_TH <- 1
 
 PVREQ <- 0.05
 
-tst <- function(row, k, e)
+tst <- function(row, k, e, test="wilcox")
 {
     a = length(na.omit(row[c(k)]))
     b = length(na.omit(row[c(e)]))
     t = list(p.value = NA) # If test cannot be performed
     try(
-{
-    t <- wilcox.test(as.numeric(na.omit(row[c(k)])),
-                     as.numeric(na.omit(row[c(e)])),
-                     correct = F, exact = F)
-}, TRUE)
-if(is.finite(t$p.value))
-{
-    return(t$p.value)
-}
-else
-{
-    return(1)
-}
+    {
+        if (test == "wilcox")
+        {
+            t <- wilcox.test(as.numeric(na.omit(row[c(k)])),
+                             as.numeric(na.omit(row[c(e)])),
+                             correct = F, exact = F)
+        } else if (test == "student")
+        {
+            t <- t.test(as.numeric(na.omit(row[c(k)])),
+                             as.numeric(na.omit(row[c(e)])),
+                             correct = F, exact = F)
+        } 
+    }, TRUE)
+    
+    if(is.finite(t$p.value))
+    {
+        return(t$p.value)
+    }
+    else
+    {
+        return(1)
+    }
 }
 ##############
 swath_rt_data <- read.table("data/ions.txt", header = T, sep = '\t', stringsAsFactors = FALSE)
@@ -137,7 +146,14 @@ peps$pepsCCWtoKCCW <- peps$CCW/peps$KCCW
 peps$ccwlfc <- log(peps$pepsCCWtoKCCW, base = LOG_BASE)
 peps$ccwpv <- apply(peps, 1, tst, KCCW_SAMPLES, CCW_SAMPLES) 
 peps$ccwqv <- p.adjust(peps$ccwpv, method = "BH")
+
+peps$ccwpv_t <- apply(peps, 1, tst, KCCW_SAMPLES, CCW_SAMPLES, "student") 
+peps$ccwqv_t <- p.adjust(peps$ccwpv_t, method = "BH")
+ccwlist_t <- unique( subset(peps, ccwpv_t < PVREQ & abs(ccwlfc) > 1, c(Pep, ccwlfc, ccwpv, Scaf)))
+
 ccwlist <- unique( subset(peps, ccwpv < PVREQ & abs(ccwlfc) > 1, c(Pep, ccwlfc, ccwpv, Scaf)))
+ccwlist <- unique( rbind(ccwlist, ccwlist_t))
+
 rownames(ccwlist) <- NULL
 ccwlist <- merge(ccwlist, swath_rt_data, by = "Pep", all.x =TRUE)
 ccwlist <- ccwlist[order(-abs(ccwlist$ccwlfc), ccwlist$ccwpv),]
@@ -151,7 +167,14 @@ peps$pepsCCMtoKCCM <- peps$CCM/peps$KCCM
 peps$ccmlfc <- log(peps$pepsCCMtoKCCM, base = LOG_BASE)
 peps$ccmpv <- apply(peps, 1, tst, KCCM_SAMPLES, CCM_SAMPLES) 
 peps$ccmqv <- p.adjust(peps$ccmpv, method = "BH")
+
+peps$ccmpv_t <- apply(peps, 1, tst, KCCM_SAMPLES, CCM_SAMPLES, "student") 
+peps$ccmqv_t <- p.adjust(peps$ccmpv_t, method = "BH")
+ccmlist_t <- unique( subset(peps, ccmpv_t < PVREQ & abs(ccmlfc) > 1, c(Pep, ccmlfc, ccmpv, Scaf)))
+
 ccmlist <- unique( subset(peps, ccmpv < PVREQ & abs(ccmlfc) > 1, c(Pep, ccmlfc, ccmpv, Scaf)))
+ccmlist <- unique( rbind(ccmlist, ccmlist_t))
+
 rownames(ccmlist) <- NULL
 ccmlist <- merge(ccmlist, swath_rt_data, by = "Pep", all.x =TRUE)
 ccmlist <- ccmlist[order(-abs(ccmlist$ccmlfc), ccmlist$ccmpv),]
@@ -167,7 +190,14 @@ peps$pepsCCtoKCC <- peps$CC/peps$KCC
 peps$cclfc <- log(peps$pepsCCtoKCC, base = LOG_BASE)
 peps$ccpv <- apply(peps, 1, tst, KCC_SAMPLES, CC_SAMPLES) 
 peps$ccqv <- p.adjust(peps$ccpv, method = "BH")
+
+peps$ccpv_t <- apply(peps, 1, tst, KCC_SAMPLES, CC_SAMPLES, "student") 
+peps$ccqv_t <- p.adjust(peps$ccpv_t, method = "BH")
+cclist_t <- unique( subset(peps, ccpv_t < PVREQ & abs(cclfc) > 1, c(Pep, cclfc, ccpv, Scaf)))
+
 cclist <- unique( subset(peps, ccpv < PVREQ & abs(cclfc) > 1, c(Pep, cclfc, ccpv, Scaf)))
+cclist <- unique(rbind(cclist, cclist_t))
+
 rownames(cclist) <- NULL
 cclist <- merge(cclist, swath_rt_data, by = "Pep", all.x =TRUE)
 cclist <- cclist[order(-abs(cclist$cclfc), cclist$ccpv),]
@@ -182,7 +212,7 @@ write.table(ccmlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")],
             "CCMuniq_peptides.txt", sep = '\t', row.names = F, quote = F)
 ccmlist$M <- TRUE
 ccmlist$W <- FALSE
-ccmtlist <- rbind(cclist, ccmlist)
+ccmtlist <- unique(rbind(cclist, ccmlist))
 ccmtlist <- ccmtlist
 write.table(ccmtlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
             "CCMtotal.txt", sep = '\t', row.names = F, quote = F)
@@ -192,7 +222,7 @@ write.table(ccwlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")],
             "CCWuniq_peptides.txt", sep = '\t', row.names = F, quote = F)
 ccwlist$M <- FALSE
 ccwlist$W <- TRUE
-ccwtlist <- rbind(cclist, ccwlist)
+ccwtlist <- unique(rbind(cclist, ccwlist))
 ccwtlist <- ccwtlist
 write.table(ccwtlist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
             "CCWtotal.txt", sep = '\t', row.names = F, quote = F)
@@ -203,7 +233,14 @@ peps$pepsOCtoKOC <- peps$OC/peps$KOC
 peps$oclfc <- log(peps$pepsOCtoKOC, base = LOG_BASE)
 peps$ocpv <- apply(peps, 1, tst, KOC_SAMPLES, OC_SAMPLES) 
 peps$ocqv <- p.adjust(peps$ocpv, method = "BH")
+
+peps$ocpv_t <- apply(peps, 1, tst, KOC_SAMPLES, OC_SAMPLES, "student") 
+peps$ocqv_t <- p.adjust(peps$ocpv_t, method = "BH")
+oclist_t <- unique(subset(peps, ocpv_t < PVREQ & abs(oclfc) > 1, c(Pep, oclfc, ocpv, Scaf)))
+
 oclist <- unique(subset(peps, ocpv < PVREQ & abs(oclfc) > 1, c(Pep, oclfc, ocpv, Scaf)))
+oclist <- unique( rbind(oclist, oclist_t))
+
 rownames(oclist) <- NULL
 oclist <- merge(oclist, swath_rt_data, by = "Pep", all.x =TRUE)
 oclist <- oclist[order(-abs(oclist$oclfc), oclist$ocpv),]

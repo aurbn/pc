@@ -203,14 +203,30 @@ peps$pepsOCtoKOC <- peps$OC/peps$KOC
 peps$oclfc <- log(peps$pepsOCtoKOC, base = LOG_BASE)
 peps$ocpv <- apply(peps, 1, tst, KOC_SAMPLES, OC_SAMPLES) 
 peps$ocqv <- p.adjust(peps$ocpv, method = "BH")
-oclist <- unique(subset(peps, ocpv < PVREQ & abs(oclfc) > 1, c(Pep, oclfc, ocpv)))
+oclist <- unique(subset(peps, ocpv < PVREQ & abs(oclfc) > 1, c(Pep, oclfc, ocpv, Scaf)))
 rownames(oclist) <- NULL
 oclist <- merge(oclist, swath_rt_data, by = "Pep", all.x =TRUE)
 oclist <- oclist[order(-abs(oclist$oclfc), oclist$ocpv),]
 oclist <- rename(oclist, c("oclfc" = "log2fc", "ocpv" = "pv", "Prot" = "Protein"))
+oclist$W <- TRUE
+oclist$M <- FALSE
 write.table(oclist[,c("Pep", "RT", "log2fc", "pv", "Protein", "Description")], 
             "OC_peptides.txt", sep = '\t', row.names = F, quote = F)
-###########################
+##################################
+all <- rbind(ccwtlist, ccmtlist, oclist)
+all$M <- NULL
+all$W <- NULL
+all$log2fc <- NULL
+all$pv <- NULL
+all <- unique(all)
+all$M <- all$Pep %in% ccmtlist$Pep
+all$W <- all$Pep %in% ccwlist$Pep
+all$OC <- all$Pep %in% oclist$Pep
+write.table(all[,c("Pep", "RT", "Protein", "Description", "M", "W", "OC")], 
+            "ALL_peptides.txt", sep = '\t', row.names = F, quote = F)
+
+
+##################################
 
 
 both <- intersect(oclist$Pep, cclist$Pep)
